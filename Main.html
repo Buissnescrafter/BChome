@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css" type="text/css">
+
+<head>
+    <title>Buissnscrafter - Homepage</title>
+    <link rel="icon" type="image/x-icon" href="ppa.ico">
+</head>
+
+<body id="bg" class="bg">
+    <!--j-net bar-->
+    <div class="alignment" id="alignment">
+        <div class="top">
+            <p class="topbuttonmarker" id="topbutton1" onclick="quicklink(1)">Homepage</p>
+            <p class="topbutton" id="topbutton2" onclick="quicklink(2)">Videos</p>
+            <p class="topbutton" id="topbutton3" onclick="quicklink(3)">Events</p>
+            <p class="topbutton" id="topbutton4" onclick="quicklink(4)">Partner</p>
+            <p class="topbutton" id="topbutton5" onclick="quicklink(5)">Discord</p>
+        </div>
+    </div>
+
+    <div id="content1"> <!--Homepage-->
+        <div class="mainbanner" id="mainbanner"></div>
+    </div>
+
+    <div id="content2"> <!--Videos-->
+    </div>
+
+    <div id="content3"> <!--Events-->
+    </div>
+
+    <div id="content4"> <!--Partner-->
+    </div>
+
+    <div id="content5"> <!--Discord-->
+        <div class="center">
+        
+        </div>
+    </div>
+</body>
+
+<script>
+    let currentmode = 1
+    let bg = 0
+    let darkmode = false
+
+    function quicklink(mode, element) {
+        document.getElementById("topbutton" + currentmode).className = "topbutton"
+        document.getElementById("topbutton" + mode).className = "topbuttonmarker"
+        document.getElementById("content1").style.display = "none"
+        document.getElementById("content2").style.display = "none"
+        document.getElementById("content3").style.display = "none"
+        document.getElementById("content4").style.display = "none"
+        document.getElementById("content5").style.display = "none"
+        document.getElementById("content" + mode).style.display = "initial"
+        currentmode = mode
+    }
+</script>
+
+</html>
