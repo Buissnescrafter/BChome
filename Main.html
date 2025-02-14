@@ -24,6 +24,7 @@
     </div>
 
     <div id="content2"> <!--Videos-->
+        <div class="ytaccount" id="ytaccount"></div>
     </div>
 
     <div id="content3"> <!--Events-->
@@ -44,6 +45,8 @@
     let bg = 0
     let darkmode = false
 
+    function discord() {window.location.href = "https://discord.gg/bZRC6NkhNK";}
+
     function quicklink(mode, element) {
         document.getElementById("topbutton" + currentmode).className = "topbutton"
         document.getElementById("topbutton" + mode).className = "topbuttonmarker"
@@ -54,7 +57,9 @@
         document.getElementById("content5").style.display = "none"
         document.getElementById("content" + mode).style.display = "initial"
         currentmode = mode
+        if (mode == 5) discord()
     }
+quicklink(1)
 </script>
 
 </html>
