@@ -1,0 +1,102 @@
+.mainbanner {
+    margin: 1vw;
+    height: 30vh;
+    border-radius: 50px;
+    border-style: none;
+    background-image: url("mainbanner.png");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+body {
+    margin: 0vw;
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dc {
+    background-image: url("dclogo.png");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    width: 20vw;
+    height: 20vw;
+}
+
+.top {
+    position: static;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(135deg, rgb(62, 62, 62) 0%, rgb(0, 0, 0) 80%, rgba(0, 48, 255, 1) 100%, rgba(69, 69, 69, 1) 4049%, rgba(221, 210, 53, 1) 5435%);
+    display: flex;
+    border: 10px;
+    border-style: none;
+    border-radius: 50px;
+    width: min-content;
+    height: min-content;
+    align-items: center;
+    justify-content: center;
+}
+
+.alignment {
+    margin-top: 10px;
+    display: grid;
+    justify-content: center;
+    user-select: none;
+}
+
+
+.topbutton {
+    border-style: none;
+    border-radius: 50px;
+    height: min-content;
+    width: min-content;
+    padding: 6px;
+    margin: 6px;
+    font: 1.2rem "Fira Sans", sans-serif;
+    transition: 0.2s;
+    color: rgb(255, 255, 255);
+}
+
+.topbutton:hover {
+    color: rgb(163, 160, 160);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.topbuttonmarker {
+    border-style: none;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.475);
+    height: min-content;
+    width: min-content;
+    padding: 6px;
+    margin: 6px;
+    font: 1.2rem "Fira Sans", sans-serif;
+    transition: 0.2s;
+    color: rgb(255, 255, 255);
+    cursor: default;
+}
+
+/* Background From Uiverse.io by HarryHeywood04 */
+.bg {
+    width: 100%;
+    height: 100%;
+    background-color: #111111;
+    background-image: linear-gradient(32deg,
+            rgba(8, 8, 8, 0.74) 30px,
+            transparent);
+    background-size: 60px 60px;
+    background-position: -5px -5px;
+}
