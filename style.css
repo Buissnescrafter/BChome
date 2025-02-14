@@ -100,3 +100,15 @@ body {
     background-size: 60px 60px;
     background-position: -5px -5px;
 }
+
+.ytaccount {
+    margin: 1vw;
+    height: 30vh;
+    width: 30vh;
+    border-radius: 500px;
+    border-style: none;
+    background-image: url("profpic.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
