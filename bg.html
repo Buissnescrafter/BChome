@@ -1,0 +1,24 @@
+<html>
+<style>
+    body {
+        background-color: hsl(0, 100%, 50%);
+    }
+</style>
+
+<body id="bg">
+</body>
+
+<script>
+    let bg = 0
+
+    function animate() {
+    bg= bg + 0.1
+    bg + bg % 360
+    document.getElementById("bg").style.backgroundColor = "hsl(" + bg + ", " + 100 + "%, " + 30 + "%)"
+    requestAnimationFrame(animate);
+    }
+
+    animate()
+</script>
+
+</html>
