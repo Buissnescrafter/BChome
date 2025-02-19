@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="style.css" type="text/css">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
     <title>Buissnscrafter - Homepage</title>
     <link rel="icon" type="image/x-icon" href="ppa.ico">
 </head>
@@ -17,6 +18,7 @@
             <p class="topbutton" id="topbutton4" onclick="quicklink(4)">Partner</p>
             <p class="topbutton" id="topbutton5" onclick="quicklink(5)">Discord</p>
         </div>
+        <input type="checkbox" class="theme-checkbox" onclick="toggleLightMode()" checked>
     </div>
 
     <div id="content1"> <!--Homepage-->
@@ -24,10 +26,20 @@
     </div>
 
     <div id="content2"> <!--Videos-->
-        <div class="ytaccount" id="ytaccount"></div>
+        <div class="center">
+            <div class="ytaccount" id="ytaccount" onclick="openurl('https://www.youtube.com/@Buissnescrafter')"></div>
+        </div>
+        <div class="videos">
+            <div class="vid" onpointerover="style='background-image: url(https://i.ytimg.com/an_webp/Wyx1_mvpfuY/mqdefault_6s.webp?du=3000&sqp=CIzc170G&rs=AOn4CLAAaDIbu5H_X8F4WJnCeRAifkPpOQ);'" onmouseleave="style='background-image: url(thumbnail_2.jpg)'" style='background-image: url(thumbnail_2.jpg)' onclick="openurl('https://www.youtube.com/watch?v=Wyx1_mvpfuY')"></div>
+            <div class="vid" onpointerover="style='background-image: url(https://i.ytimg.com/an_webp/JbH7eTgHnB0/mqdefault_6s.webp?du=3000&sqp=CMXi170G&rs=AOn4CLACwhdnolf8OPUmzVtN0aB1f6PhaQ);'" onmouseleave="style='background-image: url(thumbnail_1.jpg)'" style='background-image: url(thumbnail_1.jpg)' onclick="openurl('https://www.youtube.com/watch?v=JbH7eTgHnB0')"></div>
+        </div>
     </div>
 
     <div id="content3"> <!--Events-->
+        <div class="eventpage">
+            <H1>Test Event!!!</H1>
+            <p>da und da um die se uhrzeit...</p>
+        </div>
     </div>
 
     <div id="content4"> <!--Partner-->
@@ -35,7 +47,7 @@
 
     <div id="content5"> <!--Discord-->
         <div class="center">
-        
+
         </div>
     </div>
 </body>
@@ -45,8 +57,12 @@
     let bg = 0
     let darkmode = false
 
-    function discord() {window.location.href = "https://discord.gg/bZRC6NkhNK";}
+        function toggleLightMode() {
+            var element = document.querySelector('.bg').classList.toggle('bg-light');
+        }
 
+    function discord() { window.location.href = "https://discord.gg/bZRC6NkhNK"; }
+    function openurl(url) { window.location.href = url}
     function quicklink(mode, element) {
         document.getElementById("topbutton" + currentmode).className = "topbutton"
         document.getElementById("topbutton" + mode).className = "topbuttonmarker"
@@ -59,7 +75,7 @@
         currentmode = mode
         if (mode == 5) discord()
     }
-quicklink(1)
+    quicklink(1)
 </script>
 
 </html>
