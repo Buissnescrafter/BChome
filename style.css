@@ -154,17 +154,39 @@ html {
 .eventpage {
     background: rgb(0, 255, 34);
     background: linear-gradient(300deg, rgba(0, 255, 34, 1) 0%, rgba(185, 255, 0, 1) 100%);
+    background-image: url("pvpevent.png");
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 90vw;
     margin: 5vw;
     min-height: 80vh;
     border-radius: 20px;
-    box-shadow: 0px 0px 120px -26px rgba(0, 0, 0, 1) inset;
-    -webkit-box-shadow: 0px 0px 120px -26px rgba(0, 0, 0, 1) inset;
-    -moz-box-shadow: 0px 0px 120px -26px rgba(0, 0, 0, 1) inset;
+    box-shadow: 0px 0px 400px -50px rgba(0,0,0,1) inset;
+    -webkit-box-shadow: 0px 0px 400px -50px rgba(0,0,0,1) inset;
+    -moz-box-shadow: 0px 0px 400px -50px rgba(0,0,0,1) inset;
     text-align: center;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    padding-top: 1vh;
+}
+
+.eventpageoverlay {
+    background: rgba(0, 0, 0, 0.216);
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90vw;
+    min-height: 80vh;
+    border-radius: 20px;
+    box-shadow: 0px 0px 400px -50px rgba(0,0,0,1) inset;
+    -webkit-box-shadow: 0px 0px 400px -50px rgba(0,0,0,1) inset;
+    -moz-box-shadow: 0px 0px 400px -50px rgba(0,0,0,1) inset;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 2vh;
 }
 
 /* From Uiverse.io by cuzpq */
@@ -217,4 +239,11 @@ html {
 
 .theme-checkbox:checked {
     background-position: 100%;
+}
+
+.ip {
+color: rgb(148, 148, 148);
+font-size: 24px;
+font-family: 'Lucida console';
+border-radius: 10px;
 }
