@@ -23,6 +23,7 @@
 
     <div id="content1"> <!--Homepage-->
         <div class="mainbanner" id="mainbanner"></div>
+        </iframe>
     </div>
 
     <div id="content2"> <!--Videos-->
@@ -30,15 +31,21 @@
             <div class="ytaccount" id="ytaccount" onclick="openurl('https://www.youtube.com/@Buissnescrafter')"></div>
         </div>
         <div class="videos">
-            <div class="vid" onpointerover="style='background-image: url(https://i.ytimg.com/an_webp/Wyx1_mvpfuY/mqdefault_6s.webp?du=3000&sqp=CIzc170G&rs=AOn4CLAAaDIbu5H_X8F4WJnCeRAifkPpOQ);'" onmouseleave="style='background-image: url(thumbnail_2.jpg)'" style='background-image: url(thumbnail_2.jpg)' onclick="openurl('https://www.youtube.com/watch?v=Wyx1_mvpfuY')"></div>
-            <div class="vid" onpointerover="style='background-image: url(https://i.ytimg.com/an_webp/JbH7eTgHnB0/mqdefault_6s.webp?du=3000&sqp=CMXi170G&rs=AOn4CLACwhdnolf8OPUmzVtN0aB1f6PhaQ);'" onmouseleave="style='background-image: url(thumbnail_1.jpg)'" style='background-image: url(thumbnail_1.jpg)' onclick="openurl('https://www.youtube.com/watch?v=JbH7eTgHnB0')"></div>
+            <div class="vid" style='background-image: url(thumbnail_2.jpg)'
+                onclick="openurl('https://www.youtube.com/watch?v=Wyx1_mvpfuY')"></div>
+            <div class="vid" style='background-image: url(thumbnail_1.jpg)'
+                onclick="openurl('https://www.youtube.com/watch?v=JbH7eTgHnB0')"></div>
         </div>
     </div>
 
     <div id="content3"> <!--Events-->
         <div class="eventpage">
-            <H1>Test Event!!!</H1>
-            <p>da und da um die se uhrzeit...</p>
+            <div class="eventpageoverlay">
+                <H1>PvP Event</H1>
+                <p>Du willst gegen Andere in einem PvP Event antreten?</p>
+                <p>Dann bist du hier richtig!</p>
+                <p class="ip">ipad resse</p>
+            </div>
         </div>
     </div>
 
@@ -52,17 +59,18 @@
     </div>
 </body>
 
+<!-- normal script-->
 <script>
     let currentmode = 1
     let bg = 0
     let darkmode = false
 
-        function toggleLightMode() {
-            var element = document.querySelector('.bg').classList.toggle('bg-light');
-        }
+    function toggleLightMode() {
+        var element = document.querySelector('.bg').classList.toggle('bg-light');
+    }
 
     function discord() { window.location.href = "https://discord.gg/bZRC6NkhNK"; }
-    function openurl(url) { window.location.href = url}
+    function openurl(url) { window.location.href = url }
     function quicklink(mode, element) {
         document.getElementById("topbutton" + currentmode).className = "topbutton"
         document.getElementById("topbutton" + mode).className = "topbuttonmarker"
