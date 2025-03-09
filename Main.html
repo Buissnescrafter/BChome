@@ -15,7 +15,7 @@
             <p class="topbuttonmarker" id="topbutton1" onclick="quicklink(1)">Homepage</p>
             <p class="topbutton" id="topbutton2" onclick="quicklink(2)">Videos</p>
             <p class="topbutton" id="topbutton3" onclick="quicklink(3)">Events</p>
-            <p class="topbutton" id="topbutton4" onclick="quicklink(4)">Partner</p>
+            <!-- <p class="topbutton" id="topbutton4" onclick="quicklink(4)">Partner</p> -->
             <p class="topbutton" id="topbutton5" onclick="quicklink(5)">Discord</p>
         </div>
         <input type="checkbox" class="theme-checkbox" onclick="toggleLightMode()" checked>
@@ -23,7 +23,10 @@
 
     <div id="content1"> <!--Homepage-->
         <div class="mainbanner" id="mainbanner"></div>
-        </iframe>
+        <div class="flex">
+            <div class="twitch" id="twitch">LIVE</div>
+            <div class="youtube" id="youtube"></div>
+        </div>
     </div>
 
     <div id="content2"> <!--Videos-->
@@ -31,6 +34,8 @@
             <div class="ytaccount" id="ytaccount" onclick="openurl('https://www.youtube.com/@Buissnescrafter')"></div>
         </div>
         <div class="videos">
+            <div class="vid" style='background-image: url(thumbnail_3.png)'
+                onclick="openurl('https://youtu.be/s8pi6vb-mVg')"></div>
             <div class="vid" style='background-image: url(thumbnail_2.jpg)'
                 onclick="openurl('https://www.youtube.com/watch?v=Wyx1_mvpfuY')"></div>
             <div class="vid" style='background-image: url(thumbnail_1.jpg)'
@@ -64,9 +69,16 @@
     let currentmode = 1
     let bg = 0
     let darkmode = false
+    let live = false
 
     function toggleLightMode() {
         var element = document.querySelector('.bg').classList.toggle('bg-light');
+    }
+
+    function livemode() {
+        if (live == true) {
+            var element = document.querySelector('.twitch').classList.toggle('twitch-live');
+        }
     }
 
     function discord() { window.location.href = "https://discord.gg/bZRC6NkhNK"; }
@@ -84,6 +96,8 @@
         if (mode == 5) discord()
     }
     quicklink(1)
+
+    setTimeout(livemode, 1000)
 </script>
 
 </html>
