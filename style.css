@@ -12,6 +12,70 @@
     /* Resize the background image to cover the entire container */
 }
 
+.twitch {
+    font-size: 0vw;
+    margin: 1vw;
+    height: 30vh;
+    border-radius: 50px;
+    border-style: none;
+    width: 48vw;
+    background-color: #6441a579;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/ce/Twitch_logo_2019.svg");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: contain;
+    background-size: 25vh;
+    /* Resize the background image to cover the entire container */
+    transition-duration: 0.5s;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 0, 0, 0);
+    text-shadow: 0px 0px 11px rgba(180, 3, 3, 0.718);
+}
+
+.twitch:hover {
+    background-size: 28vh;
+}
+
+.twitch-live {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    transition-duration: 0.5s;
+    width: 98vw;
+    font-size: 9vh;
+    box-shadow: 0px 0px 400px -70px rgb(255, 0, 0) inset;
+    -webkit-box-shadow: 0px 0px 400px -70px rgba(255, 0, 0, 1) inset;
+    -moz-box-shadow: 0px 0px 400px -70px rgba(255, 0, 0, 1) inset;
+}
+
+.youtube:hover {
+    background-size: 28vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.youtube {
+    margin: 1vw;
+    height: 30vh;
+    border-radius: 50px;
+    border-style: none;
+    width: 48vw;
+    background-color: #ff000067;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: contain;
+    background-size: 25vh;
+    /* Resize the background image to cover the entire container */
+    transition-duration: 0.5s;
+}
+
 body {
     margin: 0vw;
 }
@@ -163,9 +227,9 @@ html {
     margin: 5vw;
     min-height: 80vh;
     border-radius: 20px;
-    box-shadow: 0px 0px 400px -50px rgba(0,0,0,1) inset;
-    -webkit-box-shadow: 0px 0px 400px -50px rgba(0,0,0,1) inset;
-    -moz-box-shadow: 0px 0px 400px -50px rgba(0,0,0,1) inset;
+    box-shadow: 0px 0px 400px -50px rgba(0, 0, 0, 1) inset;
+    -webkit-box-shadow: 0px 0px 400px -50px rgba(0, 0, 0, 1) inset;
+    -moz-box-shadow: 0px 0px 400px -50px rgba(0, 0, 0, 1) inset;
     text-align: center;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -180,9 +244,9 @@ html {
     width: 90vw;
     min-height: 80vh;
     border-radius: 20px;
-    box-shadow: 0px 0px 400px -50px rgba(0,0,0,1) inset;
-    -webkit-box-shadow: 0px 0px 400px -50px rgba(0,0,0,1) inset;
-    -moz-box-shadow: 0px 0px 400px -50px rgba(0,0,0,1) inset;
+    box-shadow: 0px 0px 400px -50px rgba(0, 0, 0, 1) inset;
+    -webkit-box-shadow: 0px 0px 400px -50px rgba(0, 0, 0, 1) inset;
+    -moz-box-shadow: 0px 0px 400px -50px rgba(0, 0, 0, 1) inset;
     text-align: center;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -242,8 +306,8 @@ html {
 }
 
 .ip {
-color: rgb(148, 148, 148);
-font-size: 24px;
-font-family: 'Lucida console';
-border-radius: 10px;
+    color: rgb(148, 148, 148);
+    font-size: 24px;
+    font-family: 'Lucida console';
+    border-radius: 10px;
 }
